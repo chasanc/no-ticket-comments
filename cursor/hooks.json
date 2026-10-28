@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "hooks": {
+    "sessionStart": [
+      { "command": "./hooks/no-ticket-comments/no-ticket-comments.py", "timeout": 5 }
+    ],
+    "afterFileEdit": [
+      { "command": "./hooks/no-ticket-comments/no-ticket-comments.py", "timeout": 5 }
+    ],
+    "stop": [
+      { "command": "./hooks/no-ticket-comments/no-ticket-comments.py", "timeout": 5, "loop_limit": 2 }
+    ]
+  }
+}

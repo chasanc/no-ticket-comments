@@ -1,0 +1,14 @@
+{
+  "name": "no-ticket-comments",
+  "description": "AI agents paste ticket numbers and long notes into code comments, where they go stale. This hook keeps ticket IDs in commits and pull requests.",
+  "owner": {
+    "name": "Hasan Hüse"
+  },
+  "plugins": [
+    {
+      "name": "no-ticket-comments",
+      "source": "./plugin",
+      "description": "AI agents paste ticket numbers and long notes into code comments, where they go stale. This hook keeps ticket IDs in commits and pull requests, and limits a comment to a short why."
+    }
+  ]
+}

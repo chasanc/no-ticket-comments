@@ -1,0 +1,26 @@
+{
+  "name": "no-ticket-comments",
+  "version": "1.0.0",
+  "description": "AI agents paste ticket numbers and long notes into code comments, where they go stale. This hook keeps ticket IDs in commits and pull requests, and limits a comment to a short why.",
+  "author": {
+    "name": "Hasan Hüse"
+  },
+  "homepage": "https://github.com/chasanc/no-ticket-comments",
+  "repository": "https://github.com/chasanc/no-ticket-comments",
+  "license": "MIT",
+  "keywords": ["comments", "hooks", "tickets"],
+  "userConfig": {
+    "ticket_prefixes": {
+      "type": "string",
+      "title": "Ticket prefixes",
+      "description": "Comma-separated tracker keys to block in code comments, such as ENG,OPS. PROJ and TASK are placeholders.",
+      "default": "PROJ,TASK"
+    },
+    "max_comment_lines": {
+      "type": "string",
+      "title": "Max comment lines",
+      "description": "Largest new comment block the hook allows. Use a whole number.",
+      "default": "2"
+    }
+  }
+}
